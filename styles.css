@@ -238,8 +238,16 @@ html {
     }
 }
 
-li img
+table img
 {
     width: 20px;
-    height: 20px;
+    height: auto;
+}
+
+table
+{
+    width: 200px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
 }
