@@ -17,7 +17,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    overflow-x: hidden;
+    overflow-x: hidden !important;
 }
 
 /* Header */
@@ -214,29 +214,6 @@ html {
     color: #007bff;
 }
 
-
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    nav ul {
-        flex-direction: column;
-        gap: 0.5rem;
-    }
-
-    .profile-container {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .profile-container img {
-        width: 80px;
-        height: 80px;
-    }
-}
 
 table img
 {
