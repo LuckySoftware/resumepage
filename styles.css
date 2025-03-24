@@ -97,9 +97,22 @@ p {
 
 .about p
 {
+    background: rgba(255, 255, 255, 0.6);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    backdrop-filter: blur(20px);
+    color: #222;
     text-align: justify;
-    padding: 10px;
+    padding: 30px;
 }
+
+.about p:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+}
+
 
 /* Grids (Volunteer, Sports, Experience) */
 .volunteer-grid, .sports-grid, .experience-grid, .achievements-grid {
@@ -232,4 +245,64 @@ table
     justify-content: center;
     align-items: center;
     margin: 0 auto;
+}
+
+.fade-in {
+    animation: fadeIn 1s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.button {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.button:hover {
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño del botón */
+    box-shadow: 0 4px 15px rgba(0, 123, 255, 0.5); /* Sombra */
+}
+
+img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+img:hover {
+    transform: rotateY(15deg); /* Gira ligeramente en 3D */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+}
+
+@keyframes typing {
+    0% { width: 0; }
+    100% { width: 100%; }
+}
+
+h1 {
+    overflow: hidden; /* Asegura que no se vea el texto que sale del contorno */
+    border-right: 4px solid black; /* Crea el efecto de cursor */
+    white-space: nowrap;
+    animation: typing 3s steps(30) 1s forwards;
+}
+
+
+.card {
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+@keyframes slideFadeIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }

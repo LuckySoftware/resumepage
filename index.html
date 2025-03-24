@@ -10,7 +10,7 @@
     <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
     <script type="text/javascript">window.onload = function() { Calendly.initBadgeWidget({ url: 'https://calendly.com/luchomoreira-uy/30min', text: 'Meet me!', color: '#007bff', textColor: '#ffffff' }); }</script>
 
-    
+
 
     <!-- Referencia a hojas de estilo externas -->
 
@@ -28,11 +28,11 @@
     
 </head>
 <body>
-    <header>
+    <header data-aos="fade-up">
          <!-- Sección de encabezado con la imagen de perfil y un título introductorio -->
 
           <!-- Imagen de perfil -->
-        <img src="images/perfilw3.jpeg" alt="Luciano Moreira">
+        <div class="image-hover"><img src="images/perfilw3.jpeg" loading="lazy" alt="Luciano Moreira"></div>
         <div class="header-content">
 
             <!-- Título de la página con el nombre -->
@@ -45,7 +45,7 @@
 
     <main>
         <!-- Información sobre: pasiones, motivación y una cita inspiradora -->
-        <section class="about">
+        <section class="about" data-aos="fade-up">
             <h2>About Me</h2>
             <p>Hello there! I'll talk a little about myself, I'm someone who’s always looking to grow—whether it’s learning something new, pushing my own limits, or helping those around me. I’m passionate about technology and robotics, but what matters most to me is making a positive impact on the people I care about. Rugby teaches me valuable lessons every day about teamwork, perseverance, and tackling challenges with a smile. I also love spending time with my friends and family because I truly believe the best experiences are the ones we share with those we love. I’m always ready to lend a hand and contribute.<br><br><strong><i>"The real fulfillment comes from doing things well and making the world a better place."</i></strong></p>
         </section>
@@ -53,27 +53,27 @@
 
 
         <!-- Sección para mostrar los idiomas que hablas con iconos de banderas -->
-        <section class="languages">
+        <section class="languages" data-aos="fade-up">
             <h2>Languages</h2>
             <ul>
                 <table>
                     <tr>
-                        <td><img src="images/Uruguayicon.png"></td>
+                        <td><img src="images/Uruguayicon.png" loading="lazy"></td>
                         <td>Spanish</td>
                         <td>(Native)</td>
                     </tr>
                     <tr>
-                        <td><img src="images/EstadosUnidosIcono.png"></td>
+                        <td><img src="images/EstadosUnidosIcono.png" loading="lazy"></td>
                         <td>English</td>
                         <td>(<strong>C1</strong>)</td>
                     </tr>
                     <tr>
-                        <td><img src="images/BanderaBrasil.png"></td>
+                        <td><img src="images/BanderaBrasil.png" loading="lazy"></td>
                         <td>Portuguese</td>
                         <td>(Fluent)</td>
                     </tr>
                     <tr>
-                        <td><img src="images/AlemaniaIcono.png"></td>
+                        <td><img src="images/AlemaniaIcono.png" loading="lazy"></td>
                         <td>German</td>
                         <td>(<strong>A2</strong>)</td>
                     </tr>
@@ -84,7 +84,7 @@
 
 
         <!-- Sección de voluntariado, donde se mencionan tus actividades sociales -->
-        <section class="volunteering">
+        <section class="volunteering" data-aos="fade-up">
             <h2>Volunteering</h2>
             <div class="volunteer-grid">
                 <div class="volunteer-item">
@@ -107,7 +107,7 @@
         
 
         <!-- Sección que habla sobre los deportes en los que participas -->
-        <section class="sports">
+        <section class="sports" data-aos="fade-up">
             <h2>Sports</h2>
             <div class="sports-grid">
                 <div class="sports-item">
@@ -130,7 +130,7 @@
 
 
         <!-- Sección que describe experiencia laboral y educativa -->
-        <section class="experience">
+        <section class="experience" data-aos="fade-up">
             <h2>Experience</h2>
             <div class="experience-grid">
                 <div class="experience-item">
@@ -169,7 +169,7 @@
 
 
         <!-- Logros destacados, como competiciones y actividades académicas -->
-        <section class="achievements">
+        <section class="achievements" data-aos="fade-up">
             <h2>Achievements</h2>
             <div class="achievements-grid">
                 <div class="achievement-item">
@@ -188,12 +188,12 @@
 
 
          <!-- Sección de contacto con enlaces a correo electrónico y WhatsApp -->
-        <section class="contact">
+        <section data-aos="fade-up" class="contact">
             <h2>Contact Me</h2>
             <p>If you’d like to collaborate or learn more about my work, feel free to get in touch!</p>
             <div class="contact-item">
-                <a href="mailto:luchomoreira.uy@gmail.com" class="contact-button"><img src="images/email.png"></a>
-                <a href="https://wa.me/+598093392040" class="contact-button" target="_blank"><img src="images/wspp.png"></a>
+                <a href="mailto:luchomoreira.uy@gmail.com" class="contact-button"><img src="images/email.png" loading="lazy"></a>
+                <a href="https://wa.me/+598093392040" class="contact-button" target="_blank"><img src="images/wspp.png" loading="lazy"></a>
             </div>
         </section>        
     </main>
@@ -203,6 +203,17 @@
     <footer>
         <p>&copy; <i>2025 Luciano Moreira. All Rights Reserved.</i></p>
     </footer>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+    AOS.init();
+</script>
+
+
 </body>
 </html>
 
