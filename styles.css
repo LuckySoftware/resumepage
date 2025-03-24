@@ -8,7 +8,7 @@
 /* HTML */
 html {
     touch-action: manipulation;
-  }
+}
 
 /* Body */
 body {
@@ -42,6 +42,10 @@ header {
     backdrop-filter: blur(20px);
 }
 
+.header-content {
+    padding: 20px;
+}
+
 /* Profile Image */
 header img {
     width: 200px;
@@ -53,7 +57,7 @@ header img {
 }
 
 /* Name */
-header h1 {
+h1 {
     font-size: 2.8rem;
     color: #222;
     font-weight: 600;
