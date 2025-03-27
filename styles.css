@@ -273,11 +273,11 @@ table
     box-shadow: 0 4px 15px rgba(0, 123, 255, 0.5); /* Sombra */
 }
 
-img {
+.image-hover img{
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-img:hover {
+.image-hover img:hover {
     transform: rotateY(15deg); /* Gira ligeramente en 3D */
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
 }
